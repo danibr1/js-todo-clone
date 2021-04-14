@@ -1,7 +1,82 @@
-
-
-
+/* GENERAL */
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Kalam', cursive;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);; 
+    height: 100vh;
+}
+
+/* LAYOUT */
+.app{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*************************************************************
+    HEADER
+*************************************************************/
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* INPUT STYLE */
+.add-todo {
+    width: 100%;
+    height: 50px;
+    margin-bottom:40px;
+    padding: 0 15px;
+    font-size: 1rem;
+    background:rgba(255,255,255, .75);
+    border: 0;
+    box-shadow: 0 15px 10px -10px rgba(0,0,0, 0.4);
+    border-radius: 7px;
+    outline: none;
+    transition: background .4s;
+}
+
+/* Hover effect */
+.add-todo:hover,
+.add-todo:active {
+    background: #fff;
+}
+
+/*************************************************************
+    MAIN
+*************************************************************/
+/* TODO LIST */
+.todos li{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(228, 231, 34, 0.301);
+}
+
+.todos li:last-child {
+    border-bottom: 0;
+}
+
+.todos li i {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .4s;
+}
+
+.todos li i:hover {
+    opacity: 1;
+}
+
+.todos li span.completed {
+    text-decoration: line-through;
 }
