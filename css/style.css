@@ -16,9 +16,12 @@ body {
 
 /* LAYOUT */
 .app{
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.123);
 }
 
 /*************************************************************
@@ -80,5 +83,6 @@ h1 {
 }
 
 .todos li span.completed {
+    opacity: .5;
     text-decoration: line-through;
 }
